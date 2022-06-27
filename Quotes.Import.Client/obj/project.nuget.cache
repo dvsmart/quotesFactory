@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "AMeAY72DfbWXD1lGftTsorLF2kEV2qwx0wGCiEgZvE5/r4OsMAWT+SNa82k3iMegVZKUhSlDZYtqS1Azrem+sQ==",
+  "dgSpecHash": "JvefED4kV5zf9aY/rvZJOT216YFIBj742B1OJ92P8z9uC1Qu6lmCGh4p5YAPg/IkxGWjl3JzTzOTFXhD6yvr+Q==",
   "success": true,
-  "projectFilePath": "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\Quotes.Import.Client\\Quotes.Import.Client.csproj",
+  "projectFilePath": "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Client/Quotes.Import.Client.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vijayk\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\azure.core.amqp\\1.2.0\\azure.core.amqp.1.2.0.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\azure.messaging.servicebus\\7.8.1\\azure.messaging.servicebus.7.8.1.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\microsoft.azure.amqp\\2.5.10\\microsoft.azure.amqp.2.5.10.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\vijayk\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "/Users/dhakshanya/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/azure.core.amqp/1.2.0/azure.core.amqp.1.2.0.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/azure.messaging.servicebus/7.8.1/azure.messaging.servicebus.7.8.1.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/microsoft.azure.amqp/2.5.10/microsoft.azure.amqp.2.5.10.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/system.diagnostics.diagnosticsource/4.6.0/system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
+    "/Users/dhakshanya/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

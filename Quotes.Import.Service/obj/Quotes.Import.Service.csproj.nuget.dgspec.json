@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\Quotes.Import.Service\\Quotes.Import.Service.csproj": {}
+    "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Service/Quotes.Import.Service.csproj": {}
   },
   "projects": {
-    "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\MessageBus.Handler.Contracts\\MessageBus.Handler.Contracts.csproj": {
+    "/Users/dhakshanya/Documents/GitHub/quotesFactory/MessageBus.Handler.Contracts/MessageBus.Handler.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\MessageBus.Handler.Contracts\\MessageBus.Handler.Contracts.csproj",
+        "projectUniqueName": "/Users/dhakshanya/Documents/GitHub/quotesFactory/MessageBus.Handler.Contracts/MessageBus.Handler.Contracts.csproj",
         "projectName": "MessageBus.Handler.Contracts",
-        "projectPath": "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\MessageBus.Handler.Contracts\\MessageBus.Handler.Contracts.csproj",
-        "packagesPath": "C:\\Users\\vijayk\\.nuget\\packages\\",
-        "outputPath": "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\MessageBus.Handler.Contracts\\obj\\",
+        "projectPath": "/Users/dhakshanya/Documents/GitHub/quotesFactory/MessageBus.Handler.Contracts/MessageBus.Handler.Contracts.csproj",
+        "packagesPath": "/Users/dhakshanya/.nuget/packages/",
+        "outputPath": "/Users/dhakshanya/Documents/GitHub/quotesFactory/MessageBus.Handler.Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vijayk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/dhakshanya/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,36 +58,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\Quotes.Import.Service\\Quotes.Import.Service.csproj": {
+    "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Service/Quotes.Import.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\Quotes.Import.Service\\Quotes.Import.Service.csproj",
+        "projectUniqueName": "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Service/Quotes.Import.Service.csproj",
         "projectName": "Quotes.Import.Service",
-        "projectPath": "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\Quotes.Import.Service\\Quotes.Import.Service.csproj",
-        "packagesPath": "C:\\Users\\vijayk\\.nuget\\packages\\",
-        "outputPath": "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\Quotes.Import.Service\\obj\\",
+        "projectPath": "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Service/Quotes.Import.Service.csproj",
+        "packagesPath": "/Users/dhakshanya/.nuget/packages/",
+        "outputPath": "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vijayk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/dhakshanya/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\MessageBus.Handler.Contracts\\MessageBus.Handler.Contracts.csproj": {
-                "projectPath": "E:\\CodingChallenge\\BalanceRe\\QuotesPipeline\\MessageBus.Handler.Contracts\\MessageBus.Handler.Contracts.csproj"
+              "/Users/dhakshanya/Documents/GitHub/quotesFactory/MessageBus.Handler.Contracts/MessageBus.Handler.Contracts.csproj": {
+                "projectPath": "/Users/dhakshanya/Documents/GitHub/quotesFactory/MessageBus.Handler.Contracts/MessageBus.Handler.Contracts.csproj"
               }
             }
           }
@@ -147,7 +143,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }
