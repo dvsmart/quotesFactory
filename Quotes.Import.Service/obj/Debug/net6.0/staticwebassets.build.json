@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "SU2plX0m1E0dnRdUXTJ1eLIdD8hOVlJ+t6BgDrggU2U=",
+  "Source": "Quotes.Import.Service",
+  "BasePath": "_content/Quotes.Import.Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
