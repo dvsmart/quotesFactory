@@ -79,3 +79,6 @@ E:/CodingChallenge/BalanceRe/QuotesPipeline/Quotes.Import.Service/obj/Debug/net6
 /Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Service/obj/Debug/net6.0/Quotes.Import.Service.pdb
 /Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Service/obj/Debug/net6.0/Quotes.Import.Service.genruntimeconfig.cache
 /Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Service/obj/Debug/net6.0/ref/Quotes.Import.Service.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\obj\Debug\net6.0\Quotes.Import.Service.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\obj\Debug\net6.0\ref\Quotes.Import.Service.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\obj\Debug\net6.0\Quotes.Import.Service.pdb

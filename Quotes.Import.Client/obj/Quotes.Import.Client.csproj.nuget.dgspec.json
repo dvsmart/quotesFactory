@@ -1,26 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Client/Quotes.Import.Client.csproj": {}
+    "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\Quotes.Import.Client.csproj": {}
   },
   "projects": {
-    "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Client/Quotes.Import.Client.csproj": {
+    "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\Quotes.Import.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Client/Quotes.Import.Client.csproj",
+        "projectUniqueName": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\Quotes.Import.Client.csproj",
         "projectName": "Quotes.Import.Client",
-        "projectPath": "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Client/Quotes.Import.Client.csproj",
-        "packagesPath": "/Users/dhakshanya/.nuget/packages/",
-        "outputPath": "/Users/dhakshanya/Documents/GitHub/quotesFactory/Quotes.Import.Client/obj/",
+        "projectPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\Quotes.Import.Client.csproj",
+        "packagesPath": "C:\\Users\\sudha.arumugam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/dhakshanya/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sudha.arumugam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\sudha.arumugam\\Desktop\\Codat": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.capitalontap.com/nuget": {}
         },
         "frameworks": {
           "net6.0": {
@@ -38,9 +42,37 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Azure.Messaging.ServiceBus": {
               "target": "Package",
               "version": "[7.8.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -58,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

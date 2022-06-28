@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Quotes.Reader.Client": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\QuotesOutput D:\\QuotesReaderOutput  31-12-2019 \"Cap Vols\""
+    }
+  }
+}

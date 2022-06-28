@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Quotes.Import.Client": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\QuotesInput D:\\QuotesOutput"
+    }
+  }
+}
