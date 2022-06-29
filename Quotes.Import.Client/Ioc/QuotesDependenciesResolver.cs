@@ -1,7 +1,12 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using FluentValidation;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Quotes.Import.Client.Models;
+using Quotes.Import.Client.Services;
+using Quotes.Import.Client.Validators;
+using System.Net.Http;
 
 namespace Quotes.Import.Client.Ioc
 {
@@ -10,23 +15,28 @@ namespace Quotes.Import.Client.Ioc
         public static IContainer RegisterDependencies()
         {
             var serviceCollection = new ServiceCollection();
-            var configurationBuilder = new ConfigurationBuilder()
-           .AddJsonFile("appSettings.json");
+            var configurationBuilder = new ConfigurationBuilder().AddJsonFile("appSettings.json");
             var Configuration = configurationBuilder.Build();
 
-            // The Microsoft.Extensions.Logging package provides this one-liner
-            // to add logging services.
-            serviceCollection.AddLogging();
+            // Adding Configuration.
             serviceCollection.AddSingleton<IConfiguration>(Configuration);
+            
+            // Adding logging support
+            serviceCollection.AddLogging();
+            
             var builder = new ContainerBuilder();
             builder.Populate(serviceCollection);
-            builder.RegisterType<QuotesGroupMapperService>()
-           .As<IQuotesGroupMapperService>()
-           .SingleInstance();
 
-            builder.RegisterType<QuotesImportService>().As<IQuotesImportService>();
-            
-            
+            // Registering customer dependencies
+            builder.Register(
+               context =>
+                   context.IsRegistered<IHttpClientFactory>()
+                       ? context.Resolve<IHttpClientFactory>().CreateClient()
+                       : new HttpClient()).As<HttpClient>();
+            builder.RegisterType<QuotesImportClient>().As<IQuotesImportClient>().InstancePerLifetimeScope(); 
+            builder.RegisterType<QuotesImportService>().As<IQuotesImportService>().InstancePerLifetimeScope();
+            builder.RegisterType<QuotesImportRequestValidator>().As<IValidator<QuotesImportRequest>>().InstancePerLifetimeScope();
+
             return builder.Build();
         }
     }

@@ -1,17 +1,34 @@
 
 
 using MassTransit;
-using MessageBus.Handler.Contracts;
+using Quotes.Import.Service.Attributes;
+using Quotes.Import.Service.OperationFilters;
+using Quotes.Import.Service.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+// Add basic authentication
+builder.Services.AddControllers(opt =>
+            {
+    opt.Filters.Add<ApiKeyAttribute>();
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-ConfigureServices(builder.Services);
+
+// Add basic authentication to swagger.
+builder.Services.AddSwaggerGen(c =>
+{
+    c.OperationFilter<ApiKeyHeaderParameterFilter>(); 
+});
+var config = new ServiceAuthenticationConfig
+{
+    ApiKey = builder.Configuration.GetValue<string>("Api.Key")
+};
+builder.Services.AddSingleton<ServiceAuthenticationConfig>(config);
+builder.Services.AddScoped<IQuoteGroupsService, QuoteGroupsService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,36 +46,4 @@ app.MapControllers();
 
 app.Run();
 
- void ConfigureServices(IServiceCollection services)
-{
-    var connectionString =
-"Endpoint=sb://servicebustestnetcore.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=blablasharedaccesskey";
-
-    var newPurchaseTopic = "new-purchase-topic";
-
-    // create the bus using Azure Service bus
-    var azureServiceBus =  Bus.Factory.CreateUsingAzureServiceBus(busFactoryConfig =>
-    {
-        busFactoryConfig.Host(connectionString);
-
-        // specify the message Purchase to be sent to a specific topic
-        busFactoryConfig.Message<IQuotesEvent>(configTopology =>
-        {
-            configTopology.SetEntityName(newPurchaseTopic);
-        });
-
-    });
-
-    services.AddMassTransit
-        (
-            config =>
-            {
-                config.AddBus(provider => azureServiceBus);
-            }
-        );
-
-    services.AddSingleton<IPublishEndpoint>(azureServiceBus);
-    services.AddSingleton<IBus>(azureServiceBus);
-
-    services.AddControllers();
-}
+ 

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JriLQbVyR1Oi2r2cdJ1BZAaCOljwrWkrAUlADl1Q7MFfYh7/5mMvFn68PMJe5KYbkNG+YYKTNfus54YuxWzxfg==",
+  "dgSpecHash": "mHWKFjgSh0h23QlY88msi1Jc02w673PQ3pTD1RGT+xcTME0Y8doHgKB80LwgZx1FtxefhtkRgMJl57UOVg20jQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Reader.Client\\Quotes.Reader.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\sudha.arumugam\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
@@ -16,6 +17,7 @@
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
+    "C:\\Users\\sudha.arumugam\\.nuget\\packages\\microsoft.extensions.http\\6.0.0\\microsoft.extensions.http.6.0.0.nupkg.sha512",
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\sudha.arumugam\\.nuget\\packages\\microsoft.extensions.logging.configuration\\6.0.0\\microsoft.extensions.logging.configuration.6.0.0.nupkg.sha512",

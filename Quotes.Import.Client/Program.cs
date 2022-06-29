@@ -1,31 +1,39 @@
 ﻿using Autofac;
 using Microsoft.Extensions.Logging;
 using Quotes.Import.Client.Ioc;
+using Quotes.Import.Client.Models;
 
 public class Program
 {
 
-    static void Main(string[] args)
+    static async Task Main(string[] args)
     {
+        // Start the App.
         Console.WriteLine("Started Quotes importer process");
-        var Container = QuotesDependenciesResolver.RegisterDependencies();
-        var logger = Container.Resolve<ILogger<Program>>();
-        var quotesImportManager = Container.Resolve<IQuotesImportService>();
 
+        // Resolve dependencies
+        var container = QuotesDependenciesResolver.RegisterDependencies();
+        var logger = container.Resolve<ILogger<Program>>();
+        var quotesImportService = container.Resolve<IQuotesImportService>();
+
+        /// Check if the argument length is lesser than 2 then return error
         if (args == null || args.Length < 2)
         {
             logger.LogError("Quotes importer has been started without input directory and/or storage directory");
+            return;
         }
 
         try
         {
-            quotesImportManager.ProcessQuotes(args[0], args[1]);
+            // Process Quotes
+            await quotesImportService.ProcessAsync(new QuotesImportRequest(args[0], args[1]));
         }
         catch (Exception ex)
         {
             logger.LogError(ex, "Error on processing the Quotes importer");
         }
 
+        // Complete the app
         Console.WriteLine("Completed Quotes importer process");
     }
 }

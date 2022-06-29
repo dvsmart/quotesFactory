@@ -1,0 +1,12 @@
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\bin\Debug\net6.0\Quotes.Common.Contracts.deps.json
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\bin\Debug\net6.0\Quotes.Common.Contracts.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\bin\Debug\net6.0\ref\Quotes.Common.Contracts.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\bin\Debug\net6.0\Quotes.Common.Contracts.pdb
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\obj\Debug\net6.0\Quotes.Common.Contracts.csproj.AssemblyReference.cache
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\obj\Debug\net6.0\Quotes.Common.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\obj\Debug\net6.0\Quotes.Common.Contracts.AssemblyInfoInputs.cache
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\obj\Debug\net6.0\Quotes.Common.Contracts.AssemblyInfo.cs
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\obj\Debug\net6.0\Quotes.Common.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\obj\Debug\net6.0\Quotes.Common.Contracts.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\obj\Debug\net6.0\ref\Quotes.Common.Contracts.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Common.Contracts\obj\Debug\net6.0\Quotes.Common.Contracts.pdb
