@@ -75,6 +75,10 @@ I believe this will significantly improve the performance whilst reading the fil
     
 **        NOTE: There are more test cases which can be covered for this implementation, Due to Time Constraint, I have covered few tests that covers the basic flow and scenarios.** 
     
+## Project Folder Structure
+    
+![image](https://user-images.githubusercontent.com/36995044/176546812-9a51260b-6fc0-422c-919a-9561c11a5813.png)
+    
 ## Tools
 
 1. Visual Studio 2022
@@ -87,7 +91,13 @@ I believe this will significantly improve the performance whilst reading the fil
 
 ### Steps to Build and Run the tool
 
-1. Build the Solution
+1.  Open Visual Studio IDE 2019 or 2022
+2.  Clean and build the solution 
+3.  Expand Services -> Quotes.Import.Service and Set as Start up project
+4.  Run the above service (Swagger UI will be opened with one Action method to ensure service is up and running - https://localhost:5000/swagger)
+5.  Execute the Quotes.Import.Client under Clients folder in the solution explorer
+6.  Execute the Quotes.Reader.Client to read the output files.
+    
 
 ## High Level Requirement
 
