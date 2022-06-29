@@ -57,6 +57,11 @@ I believe this will significantly improve the performance whilst reading the fil
 
 - Used xUnit Framework
 - End to End testing covering from import to reader functions including process the files.
+- Contains Input & Output directory or folders for files storage
+- Following test methods,
+    - When_InputDirectoryHasFiles_ShouldStoreQuotesGroupFileIntoStorageLocation
+    - When_InValidInputDirectoryNamePassed_ShouldNotStoreAnyFileIntoStorageLocation
+    - When_Error_OnCallingQuotesImportService_ShouldNotStoreAnyFileIntoStorageLocation
 
 ## Tools
 
