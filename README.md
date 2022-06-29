@@ -72,6 +72,9 @@ I believe this will significantly improve the performance whilst reading the fil
 
 1. Build the Solution
 
-          
+## High Level Requirement
 
+The following picture illustrates the high level requirement for implementing the toolset.
+
+![image](https://user-images.githubusercontent.com/36995044/176513422-1b0ec32f-a2cd-4aae-ab99-560834039a23.png)
 
