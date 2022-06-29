@@ -62,7 +62,19 @@ I believe this will significantly improve the performance whilst reading the fil
     - When_InputDirectoryHasFiles_ShouldStoreQuotesGroupFileIntoStorageLocation
     - When_InValidInputDirectoryNamePassed_ShouldNotStoreAnyFileIntoStorageLocation
     - When_Error_OnCallingQuotesImportService_ShouldNotStoreAnyFileIntoStorageLocation
+- QuotesImportServiceHelper
+    - GetQuotesImportServiceInstance : Register & Resolve Dependencies
+    - SpinUpQuotesServiceApi : Host & Spin up the Quotes Service Web API
 
+### Quotes.Reader.Client.Integration.Test
+- xUnit Framework
+- Following test methods,
+    - When_StorageDirectoryHasFiles_ShouldStoreQuotesGroupResultIntoOutputDirectoryLocation
+    - When_GroupNameDoesntExist_ShouldNotStoreAnyFile
+    - When_GroupNameExistButNoQuotesExists_ShouldStoreAFileWithEmptyQuotes
+    
+**        NOTE: There are more test cases which can be covered for this implementation, Due to Time Constraint, I have covered few tests that covers the basic flow and scenarios.** 
+    
 ## Tools
 
 1. Visual Studio 2022
