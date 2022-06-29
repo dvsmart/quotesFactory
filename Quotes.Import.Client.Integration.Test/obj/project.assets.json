@@ -8342,6 +8342,7 @@
       "Quotes.Import.Service >= 1.0.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
+      "xunit.extensibility.core >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
     ]
   },
@@ -8416,6 +8417,10 @@
             "version": "[3.1.0, )"
           },
           "xunit": {
+            "target": "Package",
+            "version": "[2.4.1, )"
+          },
+          "xunit.extensibility.core": {
             "target": "Package",
             "version": "[2.4.1, )"
           },

@@ -4,6 +4,6 @@ namespace Quotes.Reader.Client.Services
 {
     public interface IQuotesGroupReaderService
     {
-        Task ReadGroupQuotesAsync(QuotesGroupReaderRequest groupReaderRequest);
+        Task ProcessAsync(QuotesGroupReaderRequest groupReaderRequest);
     }
 }

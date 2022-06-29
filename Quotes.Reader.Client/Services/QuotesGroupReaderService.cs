@@ -1,7 +1,6 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Quotes.Import.Service.Services;
 using Quotes.Reader.Client.Models;
 using Quotes.Reader.Client.ServiceModel;
 
@@ -22,7 +21,7 @@ namespace Quotes.Reader.Client.Services
             _quotesGroupReaderRequest = quotesGroupReaderRequest;
         }
 
-        public async Task ReadGroupQuotesAsync(QuotesGroupReaderRequest groupReaderRequest)
+        public async Task ProcessAsync(QuotesGroupReaderRequest groupReaderRequest)
         {
 
             // Check if the request object is valid.
