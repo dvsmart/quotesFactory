@@ -107,7 +107,6 @@ C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\b
 C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\System.Memory.Data.dll
 C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\System.Text.Json.dll
-C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\obj\Debug\net6.0\Quotes.Import.Service.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\obj\Debug\net6.0\Quotes.Import.Service.AssemblyInfoInputs.cache
 C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\obj\Debug\net6.0\Quotes.Import.Service.AssemblyInfo.cs
@@ -126,3 +125,15 @@ C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\o
 C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\Quotes.Common.Contracts.dll
 C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\Quotes.Common.Contracts.pdb
 C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\Services\IQuoteGroupsService.cs
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\Autofac.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sudha.arumugam\Desktop\Extra-work\quotesFactory\Quotes.Import.Service\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll

@@ -40,6 +40,13 @@ public class QuotesImportService : IQuotesImportService
                 return;
             }
 
+            // Check if output directory exists orelse create the directory.
+            if (!Directory.Exists(@$"{request.StorageDirectory}"))
+            {
+                _logger.LogWarning("StorageDirectorydoesnt exists.Hence Creating the directory");
+                Directory.CreateDirectory(@$"{request.StorageDirectory}");
+            }
+
             // Get All quotes group details.
             _quoteGroups = await GetQuoteGroupsAsync();
 
@@ -92,16 +99,24 @@ public class QuotesImportService : IQuotesImportService
 
     private async Task<IEnumerable<ProductQuoteGroup>> GetQuoteGroupsAsync()
     {
-        var quotesGroupHttpResponse = await _httpClientService.GetQuoteGroupsAsync();
-        quotesGroupHttpResponse.EnsureSuccessStatusCode();
-        var quotesGroupDetails = JsonConvert.DeserializeObject<IEnumerable<ProductQuoteGroup>>(
-                await quotesGroupHttpResponse.Content.ReadAsStringAsync());
-
-        if (quotesGroupDetails == null || !quotesGroupDetails.Any())
+        try
         {
-            _logger.LogError("Quotes Group Mapping detail is not available.");
-            return null;
+            var quotesGroupHttpResponse = await _httpClientService.GetQuoteGroupsAsync();
+            quotesGroupHttpResponse.EnsureSuccessStatusCode();
+            var quotesGroupDetails = JsonConvert.DeserializeObject<IEnumerable<ProductQuoteGroup>>(
+                    await quotesGroupHttpResponse.Content.ReadAsStringAsync());
+
+            if (quotesGroupDetails == null || !quotesGroupDetails.Any())
+            {
+                _logger.LogError("Quotes Group Mapping detail is not available.");
+                return null;
+            }
+            return quotesGroupDetails;
         }
-        return quotesGroupDetails;
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error on calling GetQuoteGroupsAsync.");
+            throw;
+        }
     }
 }

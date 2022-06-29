@@ -1,49 +1,19 @@
 
-
-using MassTransit;
-using Quotes.Import.Service.Attributes;
-using Quotes.Import.Service.OperationFilters;
-using Quotes.Import.Service.Services;
-
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
-// Add basic authentication
-builder.Services.AddControllers(opt =>
-            {
-    opt.Filters.Add<ApiKeyAttribute>();
-});
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-
-// Add basic authentication to swagger.
-builder.Services.AddSwaggerGen(c =>
+using Autofac.Extensions.DependencyInjection;
+namespace Quotes.Import.Service
 {
-    c.OperationFilter<ApiKeyHeaderParameterFilter>(); 
-});
-var config = new ServiceAuthenticationConfig
-{
-    ApiKey = builder.Configuration.GetValue<string>("Api.Key")
-};
-builder.Services.AddSingleton<ServiceAuthenticationConfig>(config);
-builder.Services.AddScoped<IQuoteGroupsService, QuoteGroupsService>();
 
-var app = builder.Build();
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build().Run();
+        }
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .UseServiceProviderFactory(new AutofacServiceProviderFactory())
+                .ConfigureLogging(c => c.AddConsole()) 
+                .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>().CaptureStartupErrors(true); });
+    }
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
-
- 

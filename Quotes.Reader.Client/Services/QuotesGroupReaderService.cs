@@ -36,7 +36,7 @@ namespace Quotes.Reader.Client.Services
             // Check if output directory exists orelse create the directory.
             if (!Directory.Exists(@$"{groupReaderRequest.OutputDirectory}"))
             {
-                _logger.LogError("Output directory doesnt exists.Hence Creating the directory");
+                _logger.LogWarning("Output directory doesnt exists.Hence Creating the directory");
                 Directory.CreateDirectory(@$"{groupReaderRequest.OutputDirectory}");
             }
 

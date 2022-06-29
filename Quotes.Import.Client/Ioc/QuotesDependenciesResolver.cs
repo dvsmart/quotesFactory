@@ -12,7 +12,7 @@ namespace Quotes.Import.Client.Ioc
 {
     public class  QuotesDependenciesResolver
     {
-        public static IContainer RegisterDependencies()
+        public static ContainerBuilder RegisterDependencies()
         {
             var serviceCollection = new ServiceCollection();
             var configurationBuilder = new ConfigurationBuilder().AddJsonFile("appSettings.json");
@@ -37,7 +37,7 @@ namespace Quotes.Import.Client.Ioc
             builder.RegisterType<QuotesImportService>().As<IQuotesImportService>().InstancePerLifetimeScope();
             builder.RegisterType<QuotesImportRequestValidator>().As<IValidator<QuotesImportRequest>>().InstancePerLifetimeScope();
 
-            return builder.Build();
+            return builder;
         }
     }
 }

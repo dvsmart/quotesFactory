@@ -30,7 +30,7 @@ namespace Quotes.Import.Service.Controllers
             var response = _quotesGroupMapperService.GetQuoteGroups(groupMappingFilePath);
             if (response != null && response.IsSuccessful)
             {
-                return Ok(response);
+                return Ok(response.Data);
             }
             else
             { 

@@ -4,14 +4,14 @@
     "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client.Integration.Test\\Quotes.Import.Client.Integration.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client.Integration.Test\\Quotes.Import.Client.Integration.Test.csproj": {
+    "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Common.Contracts\\Quotes.Common.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client.Integration.Test\\Quotes.Import.Client.Integration.Test.csproj",
-        "projectName": "Quotes.Import.Client.Integration.Test",
-        "projectPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client.Integration.Test\\Quotes.Import.Client.Integration.Test.csproj",
+        "projectUniqueName": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Common.Contracts\\Quotes.Common.Contracts.csproj",
+        "projectName": "Quotes.Common.Contracts",
+        "projectPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Common.Contracts\\Quotes.Common.Contracts.csproj",
         "packagesPath": "C:\\Users\\sudha.arumugam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client.Integration.Test\\obj\\",
+        "outputPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Common.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sudha.arumugam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,7 +41,82 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client.Integration.Test\\Quotes.Import.Client.Integration.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client.Integration.Test\\Quotes.Import.Client.Integration.Test.csproj",
+        "projectName": "Quotes.Import.Client.Integration.Test",
+        "projectPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client.Integration.Test\\Quotes.Import.Client.Integration.Test.csproj",
+        "packagesPath": "C:\\Users\\sudha.arumugam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client.Integration.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sudha.arumugam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\sudha.arumugam\\Desktop\\Codat": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.capitalontap.com/nuget": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\Quotes.Import.Client.csproj": {
+                "projectPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\Quotes.Import.Client.csproj"
+              },
+              "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Service\\Quotes.Import.Service.csproj": {
+                "projectPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Service\\Quotes.Import.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.11.0, )"
@@ -74,6 +149,201 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\Quotes.Import.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\Quotes.Import.Client.csproj",
+        "projectName": "Quotes.Import.Client",
+        "projectPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\Quotes.Import.Client.csproj",
+        "packagesPath": "C:\\Users\\sudha.arumugam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sudha.arumugam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\sudha.arumugam\\Desktop\\Codat": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.capitalontap.com/nuget": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Common.Contracts\\Quotes.Common.Contracts.csproj": {
+                "projectPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Common.Contracts\\Quotes.Common.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Service\\Quotes.Import.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Service\\Quotes.Import.Service.csproj",
+        "projectName": "Quotes.Import.Service",
+        "projectPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Service\\Quotes.Import.Service.csproj",
+        "packagesPath": "C:\\Users\\sudha.arumugam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Import.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sudha.arumugam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\sudha.arumugam\\Desktop\\Codat": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.capitalontap.com/nuget": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Common.Contracts\\Quotes.Common.Contracts.csproj": {
+                "projectPath": "C:\\Users\\sudha.arumugam\\Desktop\\Extra-work\\quotesFactory\\Quotes.Common.Contracts\\Quotes.Common.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.8.1, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "MassTransit.Azure.ServiceBus.Core": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "MassTransit.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
