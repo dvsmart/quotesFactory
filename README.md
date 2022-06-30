@@ -12,7 +12,7 @@ I have implemented the below features over this quotesFactory Repository,
 ### Quotes.Import.Client which includes,
 
 - Console Application - main Client app
-- Reads the *.csv files from input location and the storage location from user's input
+- Reads the *.csv files from location and the storage location path ARGUMENTS from user's input
 - Validates the input and storage location using FluentValidation
 - Register and Resolves the Dependency injections using AutoFac DI Package.
 - Extention classes, to read file contents and write file contents.
@@ -45,8 +45,8 @@ I believe this will significantly improve the performance whilst reading the fil
 
 ### Quotes.Reader.Client
 
-- Console Application, reads input parameters - storageDirectory, output directory, date and group.
-- Validates the input parameters
+- Console Application, reads commandline ARGUMENTS parameters - storageDirectory, output directory, date and group.
+- Validates the arguement values
 - Verify if Output location exists or create one if not
 - Throws and returns with error if Storage location does not exists
 - Parse the input parameters -  asOfDate and group name
@@ -95,8 +95,14 @@ I believe this will significantly improve the performance whilst reading the fil
 2.  Clean and build the solution 
 3.  Expand Services -> Quotes.Import.Service and Set as Start up project
 4.  Run the above service (Swagger UI will be opened with one Action method to ensure service is up and running - https://localhost:5000/swagger)
-5.  Execute the Quotes.Import.Client under Clients folder in the solution explorer
-6.  Execute the Quotes.Reader.Client to read the output files.
+5.  Open CommandPrompt and locate the Quotes.Import.Client.exe and pass the input location arguments and storage location as below
+    
+            "C:\Users\vijayk\Desktop\quotesFactory-master\quotesFactory-master\Quotes.Import.Client\bin\Debug\net6.0>Quotes.Import.Client.exe          C:\Users\vijayk\Desktop\quotesFactory-master\quotesFactory-master\SampleData\Input C:\Users\vijayk\Desktop\quotesFactory-master\quotesFactory-master\SampleData\Output"
+    
+6.  Verify if the output json files are stored in the output location    
+7.  Open the CMD and locate Quotes.Reader.Client.exe path and pass the arguments as below,
+            "C:\Users\vijayk\Desktop\quotesFactory-master\quotesFactory-master\Quotes.Reader.Client\bin\Debug\net6.0>Quotes.Reader.Client.exe           C:\Users\vijayk\Desktop\quotesFactory-master\quotesFactory-master\SampleData\Output C:\Users\vijayk\Desktop\quotesFactory-master\quotesFactory-master\SampleData\Output 30-12-2019 "Eonia" "
+8.  Verify if desired output file is created in the output location as JSON format (<group-name-asOfDate.json)
     
 
 ## High Level Requirement
